@@ -1,0 +1,38 @@
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { vegitables } from '../data/vegitabledata';
+
+
+const ReadVegitablePage = () => {
+  const { id } = useParams();
+  const vegitableDetail = vegitables.find(vegitable => vegitable.id.toString() === id);
+
+  if (!vegitableDetail) {
+    return (
+      <div className="p-4 text-red-600">
+        Vegitable not found.
+      </div>
+    );
+  }
+
+  return (
+    <div className="p-4">
+      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 justify-items-center  m-auto">
+        <img className="rounded-t-lg w-full h-70 object-cover" src={vegitableDetail.image} alt={vegitableDetail.title} />
+        <div className="p-5">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {vegitableDetail.title}
+          </h5>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            {vegitableDetail.description}
+          </p>
+          <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ReadVegitablePage;
