@@ -40,7 +40,7 @@ const FooterComponent = () => {
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <a
-                        href="https://github.com/themesberg/flowbite"
+                        href="https://web.facebook.com/VVst128"
                         className="hover:underline "
                       >
                         Vorn Theavy
@@ -48,7 +48,7 @@ const FooterComponent = () => {
                     </li>
                     <li>
                       <a
-                        href="https://discord.gg/4eeurUVvTy"
+                        href="https://web.facebook.com/VVst128"
                         className="hover:underline"
                       >
                        @VyVySt218

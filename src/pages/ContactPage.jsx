@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
     return (
         <div className='border-double w-100 h-120 border-3 m-auto p-5 mt-15 border-green-800'>
             <b style={{ color: 'green',fontSize: '20px' }}>KhmerFarm : </b>Welcome
             <p>Contact with social media below :</p>
-            <li>Facebook : Vorn Theavy</li>
+            <li>Facebook : <Link to="https://web.facebook.com/VVst128">Vorn Theavy</Link> </li>
             <li>TikTok : Vorn Theavy</li>
             <li>Telegram : @VyvySt218</li>
             <div className='w-50 h-50 m-auto mt-4'>
